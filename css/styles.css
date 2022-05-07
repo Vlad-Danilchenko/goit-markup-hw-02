@@ -1,0 +1,48 @@
+/* колір основного тексту #212121 */
+/* додаткови колір тексту #757575 */
+/* білий #FFFFFF */
+/* акцент #2196F3 */
+/* другорядний коолір фона #F5F4FA */
+
+:root {
+    --primery-text-color: #757575;
+    --title-text-color: #212121;
+    --acent: #2196F3;
+}
+
+
+body {
+    background-color: #ffffff;
+    color: var(--primery-text-color);
+}
+.list{
+    list-style: none;
+}
+
+/* logo */
+.acent-logo {
+    color: var(--acent);
+}
+.logo{
+    color: black;
+}
+/* site-nav */
+.site-nav{
+    color: var(--title-text-color);
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--acent);
+}
+
+/* hero */
+
+/* sections */
+.section-title{
+    color: var(--title-text-color);
+}
+
+/* list-item */
+.li-title{
+    color: var(--title-text-color);
+}
