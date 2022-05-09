@@ -12,7 +12,6 @@
     --primery-button-color: #F5F4FA;
 }
 
-
 body {
     background-color: var(--primery-bg-color);
     color: var(--primery-text-color);
@@ -40,10 +39,10 @@ body {
     
 }
 .logo-main{
-    color: black;
+    color: #000;
 }
 .logo-secondary{
-    color: #FFFFFF;
+    color: var(--primery-bg-color);
 }
 
 
@@ -87,7 +86,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--primery-bg-color);
     background-color: var(--primery-text-color);
 }
 
@@ -118,10 +117,13 @@ body {
     letter-spacing: 0.03em;
 }
 .list .team-prof{
+    color: var(--primery-text-color);
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 
 .list .link-team{
@@ -129,10 +131,19 @@ body {
 }
 
 /* button */
-.button {
+.button,
+.list .filter-button:hover,
+.list .filter-button:focus
+{
     color: var(--primery-bg-color);
     background-color: var(--acent);
+    cursor: pointer;
 }
+.list .filter-button{
+    color: var(--title-text-color);
+    background-color: var(--primery-button-color);
+}
+
 
 /* Footer */
 .footer{
@@ -145,4 +156,28 @@ body {
 .contact{
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
+}
+
+
+/* Portfolio */
+
+.portfolio-link{
+    text-decoration: none;  
+}
+.portfolio-link h2{
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.portfolio-link h3{
+    color: var(--primery-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+}
+.portfolio-img{
+    width: 370px;
 }
