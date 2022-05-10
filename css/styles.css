@@ -10,6 +10,7 @@
     --acent: #2196F3;
     --primery-bg-color: #ffffff;
     --primery-button-color: #F5F4FA;
+    --footer-bg-color: #2F303A;
 }
 
 body {
@@ -79,6 +80,9 @@ body {
 
 
 /* hero */
+.hero{
+    background-color: var(--footer-bg-color);
+}
 .hero h1{
     font-weight: 900;
     font-size: 44px;
@@ -87,7 +91,6 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primery-bg-color);
-    background-color: var(--primery-text-color);
 }
 
 /* sections */
@@ -147,7 +150,7 @@ body {
 
 /* Footer */
 .footer{
-    background-color: var(--primery-text-color);
+    background-color: var(--footer-bg-color);
 }
 .address{
     color: var(--primery-bg-color);
@@ -157,6 +160,12 @@ body {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
 }
+.footer .footer-nav:hover{
+    color: var(--acent);
+}
+
+
+
 
 
 /* Portfolio */
