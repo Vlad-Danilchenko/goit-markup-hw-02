@@ -2,7 +2,8 @@
 /* додаткови колір тексту #757575 */
 /* білий #FFFFFF */
 /* акцент #2196F3 */
-/* другорядний коолір фона #F5F4FA */
+/* другорядний колір фона #F5F4FA */
+
 
 :root {
     --primery-text-color: #757575;
@@ -11,6 +12,7 @@
     --primery-bg-color: #ffffff;
     --primery-button-color: #F5F4FA;
     --footer-bg-color: #2F303A;
+    --section-bg-color: #F5F4FA;
 }
 
 .container{
@@ -32,6 +34,8 @@ body {
 }
 .list{
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /* logo */
@@ -42,6 +46,8 @@ body {
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: 0.03em;
+    margin-bottom: 20px;
+    display: inline-block;
 }
 .acent-logo {
     color: var(--acent);
@@ -53,7 +59,10 @@ body {
 .logo-secondary{
     color: var(--primery-bg-color);
 }
-
+address  li{
+    margin-top: 0;
+    margin-bottom: 9px;
+}
 
 /* site-nav */
 .site-nav a{
@@ -90,8 +99,15 @@ body {
 /* hero */
 .hero{
     background-color: var(--footer-bg-color);
+    padding: 200px 0;
+    text-align: center;
+    margin-bottom: 94px;
+    
+    outline: 2px solid tomato;
 }
-.hero h1{
+.hero-title{
+    margin-top: 0;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -99,9 +115,13 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primery-bg-color);
+   
 }
 
 /* sections */
+.section  {
+    margin-bottom: 94px;
+}
 .section-title{
     color: var(--title-text-color);
     font-weight: 700;
@@ -109,6 +129,8 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 /* list-item */
@@ -119,6 +141,8 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .list .our-team{
     font-weight: 500;
@@ -126,6 +150,7 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
 }
 .list .team-prof{
     color: var(--primery-text-color);
@@ -134,6 +159,8 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 0;
 
 }
 
@@ -141,6 +168,29 @@ body {
     text-decoration: none;
 }
 
+
+/* .advantage .li-title{
+    margin-top: 0;
+    margin-bottom: 10px;
+
+} */
+.advantage p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* team-section */
+.team-section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--section-bg-color);
+}
+
+.team-section .list-item{
+    background-color: var(--primery-bg-color);
+    padding-bottom: 30px;
+    width: 270px;
+}
 /* button */
 .button{
     border-radius: 4px;
@@ -151,7 +201,7 @@ body {
     font-size: 16px;
     line-height: 1.88;    
      /* align-items: center; */
-    text-align: center; */
+    text-align: center;
     letter-spacing: 0.06em; 
 }
 
@@ -175,6 +225,8 @@ body {
 /* Footer */
 .footer{
     background-color: var(--footer-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address{
     color: var(--primery-bg-color);
